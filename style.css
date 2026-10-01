@@ -1,0 +1,312 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    scroll-behavior: smooth;
+}
+
+/* Menu Superior Moderno */
+header {
+    background-color: #0f172a;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ffb300;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb300;
+}
+
+/* Banner de Entrada Espetacular (Hero Area) */
+.hero {
+    position: relative;
+    background-image: url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-action {
+    display: inline-block;
+    background-color: #ffb300;
+    color: #0f172a;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 179, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #ffa000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 179, 0, 0.6);
+}
+
+/* Área de Títulos */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* Grid de Cards das Posições */
+.grid-posicoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.card-posicao {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-posicao:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.tag-posicao {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #0f172a;
+    color: #ffb300;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.card-body p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Placar Interativo Modernizado */
+.placar-section {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.3);
+    text-align: center;
+}
+
+.placar-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+    color: #ffb300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.placar-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.time-box h4 {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
+
+.numero-placar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-ponto {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-ponto:hover {
+    background-color: #7dd3fc;
+}
+
+.vs-divisor {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #64748b;
+}
+
+.btn-resetar {
+    background: transparent;
+    border: 1px solid #475569;
+    color: #94a3b8;
+    padding: 8px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-resetar:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Rodapé Final */
+footer {
+    background-color: #0f172a;
+    color: #64748b;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* Ajustes para Celular */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    .main-title {
+        font-size: 1.8rem;
+    }
+    .placar-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

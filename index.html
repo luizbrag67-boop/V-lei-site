@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Vôlei | Posições Oficiais</title>
+    <!-- Link de conexão com o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação de fonte moderna do Google -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegação Estilizada -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">VOLLEY<span>ZONE</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#posicoes">Posições</a></li>
+                    <li><a href="#quadra">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal Impactante (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Dominando a Quadra</h2>
+            <p>Descubra os segredos táticos, funções exatas e o posicionamento de cada jogador no vôlei profissional.</p>
+            <a href="#posicoes" class="btn-action">Explorar Posições</a>
+        </div>
+    </section>
+
+    <!-- Seção de Posições com Design de Cards Modernos -->
+    <main id="posicoes" class="container">
+        <h2 class="main-title">As Posições do Vôlei Explicadas</h2>
+        <p class="subtitle">Cada atleta tem uma missão crucial para o funcionamento da equipe. Entenda abaixo:</p>
+
+        <div class="grid-posicoes">
+            
+            <!-- Levantador -->
+            <div class="card-posicao">
+                <div class="card-img" style="background-image: url('https://unsplash.com');">
+                    <span class="tag-posicao">Cérebro do Time</span>
+                </div>
+                <div class="card-body">
+                    <h3>1. Levantador</h3>
+                    <p>O responsável por armar todas as jogadas de ataque. É o segundo toque da equipe, transformando uma bola de defesa em um passe perfeito e preciso para os atacantes pontuarem.</p>
+                </div>
+            </div>
+
+            <!-- Ponteiro -->
+            <div class="card-posicao">
+                <div class="card-img" style="background-image: url('https://unsplash.com');">
+                    <span class="tag-posicao">Ataque & Defesa</span>
+                </div>
+                <div class="card-body">
+                    <h3>2. Ponteiro (Punta)</h3>
+                    <p>O jogador mais versátil da quadra. Ele precisa ter força explosiva para atacar pelas laterais e, ao mesmo tempo, técnica refinada para ajudar na recepção do saque adversário.</p>
+                </div>
+            </div>
+
+            <!-- Central -->
+            <div class="card-posicao">
+                <div class="card-img" style="background-image: url('https://unsplash.com');">
+                    <span class="tag-posicao">Muro da Rede</span>
+                </div>
+                <div class="card-body">
+                    <h3>3. Central (Meio)</h3>
+                    <p>Geralmente o atleta mais alto. Sua principal função é montar o bloqueio principal no meio e se deslocar rapidamente para as pontas, além de atacar bolas extremamente velozes.</p>
+                </div>
+            </div>
+
+            <!-- Oposto -->
+            <div class="card-posicao">
+                <div class="card-img" style="background-image: url('https://unsplash.com');">
+                    <span class="tag-posicao">Força Bruta</span>
+                </div>
+                <div class="card-body">
+                    <h3>4. Oposto</h3>
+                    <p>O maior pontuador do time. Ele joga na posição inversamente oposta ao levantador e fica totalmente liberado das recepções de saque para focar em ataques avassaladores.</p>
+                </div>
+            </div>
+
+            <!-- Líbero -->
+            <div class="card-posicao">
+                <div class="card-img" style="background-image: url('https://unsplash.com');">
+                    <span class="tag-posicao">Especialista Defensivo</span>
+                </div>
+                <div class="card-body">
+                    <h3>5. Líbero</h3>
+                    <p>Usa uniforme de cor diferente e atua apenas no fundo da quadra. Não pode sacar ou atacar, mas suas manchetes e defesas salvam o time nos momentos mais difíceis.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Seção do Placar Interativo Embaixo das Posições -->
+        <section id="quadra" class="placar-section">
+            <div class="placar-container">
+                <h3>Painel de Controle de Pontos</h3>
+                <div class="placar-flex">
+                    <div class="time-box">
+                        <h4>TIME A</h4>
+                        <div id="score-br" class="numero-placar">0</div>
+                        <button id="btn-br" class="btn-ponto">+ Ponto</button>
+                    </div>
+                    <div class="vs-divisor">VS</div>
+                    <div class="time-box">
+                        <h4>TIME B</h4>
+                        <div id="score-usa" class="numero-placar">0</div>
+                        <button id="btn-usa" class="btn-ponto">+ Ponto</button>
+                    </div>
+                </div>
+                <button id="btn-reset" class="btn-resetar">Zerar Painel</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Dark -->
+    <footer>
+        <p>&copy; 2026 VolleyZone. Todos os direitos reservados. Desenvolvido no TrebEdit.</p>
+    </footer>
+
+    <!-- Link de conexão com o script interativo -->
+    <script src="script.js"></script>
+</body>
+</html>
